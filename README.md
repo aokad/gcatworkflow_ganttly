@@ -43,4 +43,4 @@ DF_PATH=./df.json
 python ./plot_gantt.py ${DF_PATH}
 ```
 
-[example](./example.html)
+[example](http://htmlpreview.github.io/?https://github.com/aokad/gcatworkflow_ganttly/blob/master/example.html)
