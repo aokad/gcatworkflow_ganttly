@@ -22,10 +22,10 @@ cd gcatworkflow_ganttly
 1. download AWS CloudWatch log
 
 ```
+DOWNLOAD_DIR=./
 LOG_GROUP_PREFIX=aws/batch/job
 LOG_STREAM_PREFIX=default/xxxxxxxxxxxx
-DOWNLOAD_DIR=./
-python ./download_log.py ${LOG_GROUP_PREFIX} ${LOG_STREAM_PREFIX} ${DOWNLOAD_DIR}
+python ./download_log.py ${DOWNLOAD_DIR} ${LOG_GROUP_PREFIX} ${LOG_STREAM_PREFIX}
 ```
 
 2. log ---> dataframe
