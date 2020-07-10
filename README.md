@@ -22,9 +22,9 @@ cd gcatworkflow_ganttly
 1. download AWS CloudWatch log
 
 ```
+LOG_GROUP_PREFIX=/aws/batch/job
+LOG_STREAM_PREFIX=gcatworkflow-cloud-run-job-definition/default/xxxxxxxxxxxx
 DOWNLOAD_DIR=./
-LOG_GROUP_PREFIX=aws/batch/job
-LOG_STREAM_PREFIX=default/xxxxxxxxxxxx
 python ./download_log.py ${DOWNLOAD_DIR} ${LOG_GROUP_PREFIX} ${LOG_STREAM_PREFIX}
 ```
 
@@ -43,4 +43,4 @@ DF_PATH=./df.json
 python ./plot_gantt.py ${DF_PATH}
 ```
 
-[example](http://htmlpreview.github.io/?https://github.com/aokad/gcatworkflow_ganttly/blob/master/example.html)
+[example](./example.html)
