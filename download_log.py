@@ -128,7 +128,7 @@ def _download_log_stream(log_group_name, stream, wdir, tail = False):
     f = open("%s/%s-%s.log" % (
         output_dir,
         stream["logStreamName"].split("/")[1],
-        _timestamp(stream["creationTime"])), "w")
+        _timestamp(stream["creationTime"])), "a")
     
     if tail:
         events = _get_log_events_tail(log_group_name, stream["logStreamName"])
